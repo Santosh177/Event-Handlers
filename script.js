@@ -46,9 +46,17 @@ function validate2()
     
 function react()
 {
-    if(flag1==false && flag2==false){
-    confirm("Do you want to signing")
-    alert("successfull signup!");
-    }
+    if(emailInput.value== '' &&passwordInput.value== ''){
+        passdiv.innerText="Make sure your password is more than 8 character";
+        passdiv.style.color="red";
+        emaildiv.innerText="Make sure email is more than 3 character and has @ and a.";
+        emaildiv.style.color="red";
+        return;
+      }
+      
+      else{
+      confirm("Do you want to signing")
+      alert("successfull signup!");
+      }
 }
 button.onclick= react;
