@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:500px;
+            height:250px;
+            background-color: grey;
+            margin-top: 250px;
+            margin-left: 300px;
+            padding-left:30px;
+            padding-top:20px;
+            padding-bottom:25px;
+        }
+        #email{
+            margin-top:5px;
+            border-radius: 10px;
+        }
+        #pass{
+            margin-top:5px;
+            width:100px;
+            height:20px;
+        }
+        #pwd{
+            border-radius: 10px;
+            margin-top:5px;
+        }
+        #btn{
+            width:100px;
+            height:20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+    <div>Email</div>
+    <input type="text" id="email" placeholder="Example@gmail.com"> <br>
+    <div id="emailMsg"></div>
+    <div id="pass">Password</div>
+    <input type="password" id="pwd" placeholder="Your Password"> 
+    <div id="passMsg"></div>
+    <button id="btn">Submit</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
